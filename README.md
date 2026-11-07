@@ -143,6 +143,13 @@ This tool performs preliminary factual research and is **not legal advice**. Tra
 
 ---
 
+## 👥 Contributors
+
+- **Mahmut Baysağ** ([@mahmutbaysag](https://github.com/mahmutbaysag)) - Project Creator & Lead Developer
+- **Antigravity** (Google DeepMind) - AI Pair Programmer & Co-developer
+
+---
+
 ## 📄 License
 
 MIT License. See LICENSE file for details.

@@ -5,7 +5,9 @@ license: MIT
 compatibility: Python 3.10+, httpx, rapidfuzz, jellyfish
 metadata:
   version: "1.0.0"
-  author: "Antigravity"
+  authors:
+    - "Mahmut Baysağ (@mahmutbaysag)"
+    - "Antigravity (Google DeepMind)"
 ---
 
 # Game Title Researcher
