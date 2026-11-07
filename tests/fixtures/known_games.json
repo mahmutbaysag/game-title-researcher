@@ -1,0 +1,40 @@
+{
+  "exact_test_cases": [
+    {
+      "query": "Ironhold",
+      "expected_match": "Ironhold",
+      "source": "steam",
+      "category": "exact_match"
+    },
+    {
+      "query": "Portal",
+      "expected_match": "Portal",
+      "source": "steam",
+      "category": "exact_match"
+    }
+  ],
+  "near_exact_test_cases": [
+    {
+      "query": "Ironhold",
+      "candidate": "Ironhould",
+      "category": "near_exact"
+    },
+    {
+      "query": "Dead End",
+      "candidate": "Dead-End",
+      "category": "near_exact"
+    }
+  ],
+  "generic_word_cases": [
+    {
+      "query": "War of Heroes",
+      "candidate": "Star Wars",
+      "category": "unrelated"
+    },
+    {
+      "query": "Dark Legend",
+      "candidate": "Legend of Dark",
+      "category": "structural_match"
+    }
+  ]
+}

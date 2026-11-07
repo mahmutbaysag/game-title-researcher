@@ -1,0 +1,80 @@
+# Configuration for Game Title Researcher sources
+
+automated_sources:
+  - name: "steam"
+    description: "Steam storefront search endpoint"
+    type: "api"
+    base_url: "https://store.steampowered.com/api/storesearch/"
+    auth: "none"
+    min_interval_seconds: 2.0
+    timeout_seconds: 15.0
+    enabled: true
+
+  - name: "itunes_appstore"
+    description: "Apple iTunes Search API for iOS/iPadOS games"
+    type: "api"
+    base_url: "https://itunes.apple.com/search"
+    auth: "none"
+    min_interval_seconds: 3.0
+    timeout_seconds: 15.0
+    enabled: true
+
+  - name: "gog"
+    description: "GOG.com catalog endpoint"
+    type: "api"
+    base_url: "https://catalog.gog.com/v1/catalog"
+    auth: "none"
+    min_interval_seconds: 1.5
+    timeout_seconds: 15.0
+    enabled: true
+
+manual_sources:
+  - name: "PlayStation Store"
+    url_template: "https://store.playstation.com/en-us/search/{query}"
+    instructions: "Search PlayStation catalog for active console titles."
+
+  - name: "Xbox / Microsoft Store"
+    url_template: "https://www.xbox.com/en-US/search?q={query}"
+    instructions: "Search Xbox catalog for matching titles."
+
+  - name: "Nintendo eShop"
+    url_template: "https://www.nintendo.com/us/search/#q={query}&cat=games"
+    instructions: "Search Nintendo Switch games catalog."
+
+  - name: "Google Play"
+    url_template: "https://play.google.com/store/search?q={query}&c=apps"
+    instructions: "Search Android game applications."
+
+  - name: "itch.io"
+    url_template: "https://itch.io/search?q={query}"
+    instructions: "Search indie games and game jam submissions."
+
+  - name: "Epic Games Store"
+    url_template: "https://store.epicgames.com/en-US/browse?q={query}&sortBy=relevancy"
+    instructions: "Search PC releases on Epic Games Store."
+
+trademark_sources:
+  - name: "WIPO Global Brand Database"
+    url_template: "https://branddb.wipo.int/en/?q={json_query}"
+    nice_classes: [9, 28, 41, 42]
+    notes: "International registrations under Madrid system."
+
+  - name: "USPTO Trademark Search"
+    url_template: "https://tmsearch.uspto.gov/"
+    nice_classes: [9, 28, 41, 42]
+    notes: "United States Patent and Trademark Office database."
+
+  - name: "EUIPO eSearch"
+    url_template: "https://euipo.europa.eu/eSearch/"
+    nice_classes: [9, 28, 41, 42]
+    notes: "European Union Intellectual Property Office."
+
+  - name: "TMview"
+    url_template: "https://www.tmdn.org/tmview/"
+    nice_classes: [9, 28, 41, 42]
+    notes: "Global portal aggregating multiple national IP offices."
+
+  - name: "TÜRKPATENT"
+    url_template: "https://www.turkpatent.gov.tr"
+    nice_classes: [9, 28, 41, 42]
+    notes: "Turkish Patent and Trademark Office."
