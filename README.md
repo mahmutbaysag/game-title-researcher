@@ -147,50 +147,6 @@ python -m scripts compare "Ironhold" "Iron Hold"
 
 ---
 
-## 📁 Project Structure
-
-```text
-game-title-researcher/
-├── SKILL.md                          # Agent Skills standard specification
-├── README.md                         # Documentation and usage guide
-├── requirements.txt                  # Python runtime dependencies
-├── .env.example                      # Optional credentials template
-├── .gitignore                        # Git exclusion rules
-├── config/
-│   └── sources.yaml                  # Store and source definitions
-├── references/
-│   ├── research-sources.md           # Source capabilities and access tiers
-│   ├── matching-methodology.md       # Similarity algorithms & thresholds
-│   ├── trademark-research.md         # Trademark manual guide & Nice classes
-│   ├── naming-guidelines.md          # Naming strategies and style advice
-│   └── report-template.md            # Standard Markdown report layout
-├── scripts/
-│   ├── __init__.py
-│   ├── __main__.py                   # Module entry point
-│   ├── models.py                     # Dataclasses & Enums
-│   ├── title_matcher.py              # Normalization, variants & similarity
-│   ├── evidence_store.py             # Deduplicated evidence storage
-│   ├── manual_urls.py                # Store & trademark link builders
-│   ├── risk_analyzer.py              # 7-dimension risk assessment
-│   ├── report_generator.py           # Markdown report synthesis
-│   ├── cli.py                        # Terminal interface
-│   └── adapters/
-│       ├── __init__.py
-│       ├── base.py                   # Base adapter with throttling & error handling
-│       ├── steam_adapter.py          # Steam storefront search (keyless)
-│       ├── itunes_adapter.py         # Apple App Store / iTunes API (keyless)
-│       └── gog_adapter.py            # GOG catalog API (keyless)
-└── tests/
-    ├── __init__.py
-    ├── test_title_matcher.py         # Normalization & matching unit tests
-    ├── test_evidence_store.py        # Storage & deduplication tests
-    ├── test_adapters.py              # Mocked HTTP adapter tests
-    ├── test_risk_analyzer.py         # Risk level logic tests
-    └── test_cli.py                   # End-to-end CLI & JSON tests
-```
-
----
-
 ## ⚖️ Legal Disclaimer
 
 This tool performs preliminary factual research and is **not legal advice**. Trademark and intellectual property rights depend on jurisdiction, goods and services classification, prior commercial use, and legal precedent. Always consult a qualified trademark attorney before commercial release or major financial investment.
