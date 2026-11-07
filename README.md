@@ -1,8 +1,62 @@
+<div align="center">
+
 # 🎮 Game Title Researcher
 
-A portable Agent Skill and CLI tool for video game developers to research title availability, detect naming conflicts, assess trademark risks, and discover distinctive alternatives.
+### The Open Title Intelligence & Conflict Detection Radar for Game Developers
 
-**Zero API keys required out of the box.** Query public storefronts instantly, generate pre-formatted manual verification links for restricted databases, and get clear, structured risk reports.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-8A2BE2?style=for-the-badge)](https://agentskills.io)
+[![Zero API Keys](https://img.shields.io/badge/API_Keys-Zero_Required-brightgreen?style=for-the-badge)](https://github.com/mahmutbaysag/game-title-researcher)
+
+<p align="center">
+  <b>Don't announce a game title only to discover an existing Steam hit or trademark conflict 6 months later.</b><br>
+  Instant storefront availability checks, phonetic similarity analysis, trademark portal deep-links, and multi-dimensional risk scores — <b>zero API keys, zero configuration required</b>.
+</p>
+
+[Quick Preview](#-quick-preview) •
+[Why This Tool?](#-why-game-title-researcher) •
+[Features](#-features) •
+[Installation & AI Agents](#-installation--ai-agent-setup) •
+[CLI Usage](#-cli-usage) •
+[Contributors](#-contributors)
+
+</div>
+
+---
+
+### ⚡ Quick Preview
+
+```bash
+$ python -m scripts check "Ironhold"
+
+[1/4] 🔍 Querying automated storefronts (Steam, Apple App Store, GOG)...
+[2/4] 🧬 Running phonetic (Metaphone) & similarity metrics (Levenshtein, Token Sort)...
+[3/4] 🏛️  Generating Nice Classes (9, 28, 41, 42) trademark verification links...
+[4/4] ⚖️  Synthesizing 7-dimension risk profile...
+
+================================================================================
+🎯 TITLE RESEARCH REPORT: Ironhold
+================================================================================
+🚨 Overall Risk Level: CRITICAL (Direct commercial conflict)
+📌 Direct Storefront Matches:
+   - "Ironhold" by PixelForge (Steam, 2021) [EXACT_MATCH]
+⚠️  Phonetic & Structural Matches:
+   - "Iron Hold: Tactics" (App Store, 2023) [TOKEN_SORT: 92% | SOUNDEX: MATCH]
+💡 Generated Alternatives: Iron Citadel, Iron Haven, Forgehold, Anvil Guard
+================================================================================
+```
+
+---
+
+## 💡 Why Game Title Researcher?
+
+| Pain Point | How Game Title Researcher Solves It |
+| :--- | :--- |
+| **API Gatekeeping** | **100% Keyless by Default.** Automated queries across Steam, App Store, and GOG without accounts, tokens, or cards. |
+| **Hidden Conflicts** | **Phonetic & Fuzzy Matching Engine.** Catches typo variants, transposed words, and phonetic soundalikes (*Nightfall* vs *Knightfall*). |
+| **Legal Blindspots** | **Instant Trademark Deep Links.** Auto-generates pre-filtered query URLs for WIPO, USPTO, EUIPO, TMview, and TÜRKPATENT. |
+| **Agent Ecosystem** | **Universal Agent Skills Standard.** Drop into **Claude Code, Cursor, Antigravity, Roo Code, Codex** or run as standalone CLI. |
 
 ---
 
