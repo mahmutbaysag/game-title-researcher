@@ -17,6 +17,7 @@
 </p>
 
 [Quick Preview](#-quick-preview) •
+[Screenshots](#-terminal-screenshots) •
 [Why This Tool?](#-why-game-title-researcher) •
 [Features](#-features) •
 [Installation & AI Agents](#-installation--ai-agent-setup) •
@@ -48,6 +49,22 @@ $ python -m scripts check "Ironhold"
 💡 Generated Alternatives: Iron Citadel, Iron Haven, Forgehold, Anvil Guard
 ================================================================================
 ```
+
+---
+
+## 📸 Terminal Screenshots
+
+<p align="center">
+  <b>1. Taken Title / Commercial Conflict Detected (🔴 CRITICAL Risk)</b><br>
+  <em>Example: Researching "Deathloop" detects an active Steam release and flags a direct conflict.</em><br><br>
+  <img src="./assets/screenshot-conflict.png" alt="Game Title Conflict Detected" width="100%">
+</p>
+
+<p align="center">
+  <b>2. Available Title / Suitable for Use (🟢 LOW Risk)</b><br>
+  <em>Example: Researching "Vespera Chronicles" confirms zero storefront collisions and greenlights the name.</em><br><br>
+  <img src="./assets/screenshot-available.png" alt="Game Title Available and Suitable for Use" width="100%">
+</p>
 
 ---
 
