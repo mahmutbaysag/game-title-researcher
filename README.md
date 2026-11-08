@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/logo.png" alt="Game Title Researcher Logo" width="160" height="160" style="border-radius: 20%;">
+
 # 🎮 Game Title Researcher
 
 ### The Open Title Intelligence & Conflict Detection Radar for Game Developers
