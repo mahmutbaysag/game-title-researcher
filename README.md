@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/logo.png" alt="Game Title Researcher Logo" width="160" height="160" style="border-radius: 20%;">
+<img src="./assets/logo-v2.png" alt="Game Title Researcher Logo" width="180" height="180" style="border-radius: 18%;">
 
 # 🎮 Game Title Researcher
 
