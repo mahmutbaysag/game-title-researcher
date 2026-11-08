@@ -156,6 +156,8 @@ def main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     if args.command == "check":
+        if not args.as_json and not args.verbose:
+            sys.stderr.write(f"🔍 Checking '{args.title}' across Steam, App Store, and GOG...\n")
         report = check_title(args.title, verbose=args.verbose)
         if args.as_json:
             print(json.dumps(_serialize(report), indent=2, ensure_ascii=False))

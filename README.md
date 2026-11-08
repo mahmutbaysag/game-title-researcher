@@ -160,6 +160,14 @@ This tool performs preliminary factual research and is **not legal advice**. Tra
 
 ---
 
+## 🤝 Community & Contributing
+
+- **Contributing:** See [CONTRIBUTING.md](CONTRIBUTING.md) for local dev setup and PR guidelines.
+- **Changelog:** See [CHANGELOG.md](CHANGELOG.md) for release notes.
+- **Security Policy:** See [SECURITY.md](SECURITY.md) for vulnerability disclosure.
+
+---
+
 ## 📄 License
 
 MIT License. See LICENSE file for details.

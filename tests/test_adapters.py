@@ -99,3 +99,34 @@ def test_itunes_adapter_game_filter():
         assert results[0].raw_title == "Ironhold Strategy Game"
         assert "iOS" in results[0].platforms
         assert "iPadOS" in results[0].platforms
+
+
+@respx.mock
+def test_gog_adapter_success():
+    respx.get("https://catalog.gog.com/v1/catalog").respond(
+        status_code=200,
+        json={
+            "products": [
+                {
+                    "id": 9999,
+                    "title": "Ironhold: Chronicles",
+                    "slug": "ironhold_chronicles",
+                    "developers": ["GOGDev"],
+                    "publishers": ["GOGPub"],
+                    "releaseDate": "2024-05-10T12:00:00Z",
+                    "productType": "game",
+                    "operatingSystems": ["windows", "linux", "osx"],
+                }
+            ]
+        },
+    )
+    with GOGAdapter() as adapter:
+        adapter.min_request_interval = 0.0
+        results = adapter.search("Ironhold")
+        assert len(results) == 1
+        assert results[0].raw_title == "Ironhold: Chronicles"
+        assert "Windows" in results[0].platforms
+        assert "Linux" in results[0].platforms
+        assert "macOS" in results[0].platforms
+        assert results[0].release_date == "2024-05-10"
+

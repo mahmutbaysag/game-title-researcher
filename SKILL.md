@@ -4,7 +4,7 @@ description: Research video game title availability, find naming conflicts acros
 license: MIT
 compatibility: Python 3.10+, httpx, rapidfuzz, jellyfish
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   authors:
     - "Mahmut Baysağ (@mahmutbaysag)"
     - "Antigravity (Google DeepMind)"
@@ -95,8 +95,8 @@ Every report must follow sections A through H:
 4. Trademark clearance requires professional legal counsel before commercial launch.
 
 ## References
-- Matching Methodology: [matching-methodology.md](file:///C:/Users/astro/Desktop/Projects/Projects/Game%20Title%20Researcher/game-title-researcher/references/matching-methodology.md)
-- Research Sources: [research-sources.md](file:///C:/Users/astro/Desktop/Projects/Projects/Game%20Title%20Researcher/game-title-researcher/references/research-sources.md)
-- Trademark Research: [trademark-research.md](file:///C:/Users/astro/Desktop/Projects/Projects/Game%20Title%20Researcher/game-title-researcher/references/trademark-research.md)
-- Naming Guidelines: [naming-guidelines.md](file:///C:/Users/astro/Desktop/Projects/Projects/Game%20Title%20Researcher/game-title-researcher/references/naming-guidelines.md)
-- Report Template: [report-template.md](file:///C:/Users/astro/Desktop/Projects/Projects/Game%20Title%20Researcher/game-title-researcher/references/report-template.md)
+- Matching Methodology: [matching-methodology.md](./references/matching-methodology.md)
+- Research Sources: [research-sources.md](./references/research-sources.md)
+- Trademark Research: [trademark-research.md](./references/trademark-research.md)
+- Naming Guidelines: [naming-guidelines.md](./references/naming-guidelines.md)
+- Report Template: [report-template.md](./references/report-template.md)

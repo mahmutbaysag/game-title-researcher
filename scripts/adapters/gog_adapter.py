@@ -9,7 +9,7 @@ class GOGAdapter(BaseAdapter):
     """Query the public GOG catalog endpoint.
 
     ``catalog.gog.com/v1/catalog`` is unauthenticated.  Primarily
-    DRM-free PC games.
+    DRM-free PC games (Windows, macOS, Linux).
     """
 
     name = "gog"
@@ -20,11 +20,12 @@ class GOGAdapter(BaseAdapter):
         data = self._get(
             self.base_url,
             params={
-                "query": f"like:{title}",
+                "query": title,
                 "limit": 20,
                 "countryCode": "US",
                 "locale": "en-US",
                 "currencyCode": "USD",
+                "order": "desc:score",
             },
         )
 
@@ -43,6 +44,18 @@ class GOGAdapter(BaseAdapter):
             if ptype in ("dlc", "pack"):
                 entity = EntityType.DLC_EXPANSION
 
+            # Detect actual platforms from API response
+            pf = prod.get("operatingSystems", [])
+            platforms: list[str] = []
+            if "windows" in pf:
+                platforms.append("Windows")
+            if "osx" in pf or "mac" in pf:
+                platforms.append("macOS")
+            if "linux" in pf:
+                platforms.append("Linux")
+            if not platforms:
+                platforms = ["Windows"]  # fallback for older catalog entries
+
             results.append(
                 EvidenceRecord(
                     source_name=self.name,
@@ -52,7 +65,7 @@ class GOGAdapter(BaseAdapter):
                     developer=devs or None,
                     publisher=pubs or None,
                     release_date=rd,
-                    platforms=["Windows"],
+                    platforms=platforms,
                     status="released",
                 )
             )
