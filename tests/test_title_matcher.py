@@ -1,10 +1,8 @@
 """Unit tests for title normalization, variant generation, and matching logic."""
-import pytest
 from scripts.models import MatchCategory
 from scripts.title_matcher import (
     normalize_title,
     generate_variants,
-    compare_titles,
     classify_match,
 )
 

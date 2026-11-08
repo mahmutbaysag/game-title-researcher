@@ -1,11 +1,10 @@
 """Unit tests for HTTP adapters with mocked responses."""
 import pytest
 import respx
-import httpx
 from scripts.adapters.steam_adapter import SteamAdapter
 from scripts.adapters.itunes_adapter import ITunesAdapter
 from scripts.adapters.gog_adapter import GOGAdapter
-from scripts.adapters.base import AdapterError, RateLimitError, SourceUnavailableError
+from scripts.adapters.base import RateLimitError, SourceUnavailableError
 
 
 @respx.mock

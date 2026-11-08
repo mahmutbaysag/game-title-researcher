@@ -117,32 +117,40 @@ python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install package and dependencies
+pip install -e .
+```
+
+Or install directly via git without cloning:
+```bash
+pip install git+https://github.com/mahmutbaysag/game-title-researcher.git
 ```
 
 ---
 
 ## 💻 CLI Usage
 
+Once installed, use either the `game-title-researcher` command or `python -m scripts`:
+
 ### Check a Single Title
 ```bash
-python -m scripts check "Ironhold"
+game-title-researcher check "Ironhold"
+# or: python -m scripts check "Ironhold"
 ```
 
 Verbose progress tracking:
 ```bash
-python -m scripts check "Ironhold" -v
+game-title-researcher check "Ironhold" -v
 ```
 
 Machine-readable JSON output:
 ```bash
-python -m scripts check "Ironhold" --json
+game-title-researcher check "Ironhold" --json
 ```
 
 ### Compare Two Titles
 ```bash
-python -m scripts compare "Ironhold" "Iron Hold"
+game-title-researcher compare "Ironhold" "Iron Hold"
 ```
 
 ---
